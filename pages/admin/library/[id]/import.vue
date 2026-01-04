@@ -607,6 +607,10 @@ function updateLaunchCommand(value: string) {
 function updateSetupCommand(value: string) {
   versionSettings.value.setup = value;
   autosetPlatform(value);
+  const v = (value || "").toLowerCase();
+  if (v.endsWith(".apk") || v.endsWith(".aab")) {
+    versionSettings.value.onlySetup = true;
+  }
 }
 
 function autosetPlatform(value: string) {

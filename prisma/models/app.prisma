@@ -14,6 +14,7 @@ enum Platform {
     Windows @map("windows")
     Linux   @map("linux")
     macOS   @map("macos")
+    Android @map("android")
 }
 
 enum LibraryBackend {

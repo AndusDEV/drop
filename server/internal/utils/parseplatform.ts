@@ -6,6 +6,8 @@ export function parsePlatform(platform: string) {
       return Platform.Linux;
     case "windows":
       return Platform.Windows;
+    case "android":
+      return Platform.Android;
     case "mac":
     case "macos":
       return Platform.macOS;

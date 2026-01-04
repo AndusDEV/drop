@@ -6,12 +6,14 @@ import { IGDBProvider } from "../internal/metadata/igdb";
 import { ManualMetadataProvider } from "../internal/metadata/manual";
 import { PCGamingWikiProvider } from "../internal/metadata/pcgamingwiki";
 import { SteamProvider } from "../internal/metadata/steam";
+import { GooglePlayProvider } from "../internal/metadata/googleplay";
 import { logger } from "~/server/internal/logging";
 
 export default defineNitroPlugin(async (_nitro) => {
   const metadataProviders = [
     GiantBombProvider,
     SteamProvider,
+    GooglePlayProvider,
     PCGamingWikiProvider,
     IGDBProvider,
   ];

@@ -190,6 +190,12 @@ class LibraryManager {
         // App files
         ".app",
       ],
+      Android: [
+        // Android application package
+        ".apk",
+        // Android App Bundle
+        ".aab",
+      ],
     };
 
     const options: Array<{

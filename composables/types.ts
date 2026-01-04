@@ -16,4 +16,5 @@ export enum PlatformClient {
   Windows = "Windows",
   Linux = "Linux",
   macOS = "macOS",
+  Android = "Android",
 }

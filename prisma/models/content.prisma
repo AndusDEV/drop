@@ -4,6 +4,7 @@ enum MetadataSource {
   Steam
   PCGamingWiki
   IGDB
+  GooglePlay
   Metacritic
   OpenCritic
 }
