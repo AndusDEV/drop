@@ -27,7 +27,6 @@ export class GooglePlayProvider implements MetadataProvider {
     try {
       const apps = await (gplay.default.search as any)({ term: query, num: 5, lang: "en", country: "us" });
       const results: GameMetadataSearchResult[] = (apps || [])
-        .slice(0, 3)
         .map((a: any) => ({
           id: a.appId || a.appId || "",
           name: a.title || "",
