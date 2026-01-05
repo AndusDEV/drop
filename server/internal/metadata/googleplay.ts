@@ -123,6 +123,14 @@ export class GooglePlayProvider implements MetadataProvider {
       if (app.released) released = new Date(app.released);
       else if (app.updated) released = new Date(app.updated);
 
+      let tags: string[] = [];
+
+      if (Array.isArray(app.categories)) {
+        tags = app.categories
+          .map((cat: any) => cat?.name || cat)
+          .filter(Boolean) as string[];
+      }
+
       return {
         id,
         name: String(name),
@@ -131,7 +139,7 @@ export class GooglePlayProvider implements MetadataProvider {
         released,
         publishers: [],
         developers: developersArr,
-        tags: Array.isArray(app.genres) ? app.genres : [],
+        tags,
         reviews,
         icon,
         bannerId: bannerId!,
