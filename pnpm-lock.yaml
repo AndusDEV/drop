@@ -71,9 +71,9 @@ importers:
       file-type-mime:
         specifier: ^0.4.3
         version: 0.4.7
-      google-play-scraper:
-        specifier: ^10.1.2
-        version: 10.1.2
+      google-play-scraper-ts:
+        specifier: ^0.2.0
+        version: 0.2.0
       jdenticon:
         specifier: ^3.3.0
         version: 3.3.0
@@ -4174,6 +4174,10 @@ packages:
     resolution: {integrity: sha512-otgSPpUmdWJ43VXyiNgEYE4luzHCL2pz4wQ0OnDluC6Eg4Ko3Vexy/SrSynglw/eR+OhkzmqFCZa/OFa/RgAOQ==}
     engines: {node: '>=0.6.0'}
     hasBin: true
+
+  google-play-scraper-ts@0.2.0:
+    resolution: {integrity: sha512-QRwqvSGF9K4Vfeb086Ql+xgOZHaxGh/X7K+krFh6G65o/DcyqohnLFhdX+Q1ZhqgxQrzqBTaIU69LA5XcZK+Ew==}
+    engines: {node: '>=18'}
 
   google-play-scraper@10.1.2:
     resolution: {integrity: sha512-jDgJlIXc4T785jUyD7qTTZ1i5GrJjZuJ3lxkLiUqQubxDFt669xygoRxiBmeWPRX10SWJt1rK3Mb6psO5y9xCw==}
@@ -11304,6 +11308,10 @@ snapshots:
   gonzales-pe@4.3.0:
     dependencies:
       minimist: 1.2.8
+
+  google-play-scraper-ts@0.2.0:
+    dependencies:
+      cheerio: 1.1.2
 
   google-play-scraper@10.1.2:
     dependencies:

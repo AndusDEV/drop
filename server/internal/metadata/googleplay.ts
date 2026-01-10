@@ -8,7 +8,7 @@ import type {
   CompanyMetadata,
   GameMetadataRating,
 } from "./types";
-import * as gplay from "google-play-scraper";
+import * as gplay from "google-play-scraper-ts";
 import * as jdenticon from "jdenticon";
 import type { TaskRunContext } from "../tasks";
 import type { TransactionDataType } from "../objects/transactional";
